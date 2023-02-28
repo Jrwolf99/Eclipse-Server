@@ -3,6 +3,11 @@ const express = require("express");
 const { randomUUID } = require("crypto");
 
 const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Health Check!!");
+});
+
 const wss = new WebSocket.Server({
   noServer: true,
 });
