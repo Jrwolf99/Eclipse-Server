@@ -196,3 +196,5 @@ server.on("upgrade", (request, socket, head) => {
     wss.emit("connection", socket, request);
   });
 });
+
+console.log("booting up...");
